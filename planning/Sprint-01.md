@@ -92,9 +92,9 @@ Complete an implementation-ready MVP specification and initialize the developmen
 - Completed: Configuration structure.
 - Completed: Customer, Inquiry, and Notification SQLAlchemy models.
 - Completed: Alembic initialization and initial schema migration.
-- Planned: Pydantic schemas.
+- Completed: Pydantic API schemas.
+- Completed: Standard error-handling foundation.
 - Planned: Inquiry API endpoints.
-- Planned: Standard error-handling foundation.
 - Planned: AI and email integrations.
 
 ## Review

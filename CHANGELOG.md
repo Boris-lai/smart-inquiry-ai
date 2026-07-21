@@ -27,6 +27,9 @@ This project follows a simple changelog format during early development.
 - Added Customer, Inquiry, and Notification SQLAlchemy ORM models.
 - Added Alembic configuration and the initial MySQL schema migration.
 - Added focused backend tests for health, model metadata, and migration metadata.
+- Added Pydantic API schemas for public inquiry submission, dashboard inquiry views, status updates, notifications, and standard errors.
+- Added FastAPI exception handling foundation for validation, malformed JSON, API errors, not-found errors, conflicts, and unexpected failures.
+- Added focused backend tests for schema validation and error-handler behavior.
 
 ### Changed
 
@@ -48,6 +51,7 @@ This project follows a simple changelog format during early development.
 - Standardized API routes under `/api/v1`.
 - Synchronized planning and progress documents for Day 6 readiness.
 - Updated Sprint 1 and TODO progress for Day 6 backend foundation and schema work.
+- Updated Sprint 1 and TODO progress for Day 6 Pydantic schema and error-handling work.
 
 ### Removed
 

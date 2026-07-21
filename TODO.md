@@ -12,7 +12,7 @@ Establish the product definition, architecture direction, domain model, and firs
 
 ### Current Progress
 
-Day 1-5 specification work is complete. Day 6 backend foundation, ORM models, Alembic setup, and the initial schema migration are in place.
+Day 1-5 specification work is complete. Day 6 backend foundation, ORM models, Alembic setup, the initial schema migration, Pydantic API schemas, and standard error handling are in place.
 
 ### Current Task
 
@@ -94,6 +94,8 @@ Every completed milestone should include:
 - [x] Initialize application project
 - [x] Add Customer, Inquiry, and Notification ORM models
 - [x] Initialize Alembic and create initial schema migration
+- [x] Add Pydantic API schemas
+- [x] Add standard API error-handling foundation
 - [ ] Build inquiry form
 - [ ] Store inquiry submissions
 - [ ] Generate AI output
@@ -102,7 +104,6 @@ Every completed milestone should include:
 - [ ] Build inquiry detail view
 - [ ] Add basic status update
 - [ ] Add basic validation
-- [ ] Add Pydantic API schemas
 - [ ] Add inquiry API endpoints
 - [ ] Add MVP setup documentation
 

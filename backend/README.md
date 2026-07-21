@@ -10,11 +10,12 @@ FastAPI backend foundation for the Smart Inquiry AI MVP.
 - Synchronous SQLAlchemy session foundation
 - Customer, Inquiry, and Notification ORM models
 - Alembic configuration and initial MySQL schema migration
+- Pydantic API schema contracts for the approved MVP inquiry workflow
+- Standard API error envelope and FastAPI exception handling foundation
 
 Not implemented yet:
 
 - Inquiry API endpoints
-- Pydantic API schemas for inquiry workflows
 - Repository or service business logic
 - AI generation
 - Email notifications
@@ -104,3 +105,6 @@ alembic upgrade head --sql
 ```bash
 pytest
 ```
+
+The current test suite validates health, model metadata, migration metadata,
+Pydantic schema behavior, and standard API error handling.
