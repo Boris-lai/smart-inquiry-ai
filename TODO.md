@@ -12,11 +12,11 @@ Establish the product definition, architecture direction, domain model, and firs
 
 ### Current Progress
 
-Day 1-5 specification work is complete. Product, architecture, domain, database, and API contracts are ready for Day 6 backend implementation.
+Day 1-5 specification work is complete. Day 6 backend foundation, ORM models, Alembic setup, and the initial schema migration are in place.
 
 ### Current Task
 
-Prepare for Day 6 backend foundation without expanding MVP scope.
+Continue Day 6 backend implementation without expanding MVP scope.
 
 ### Next Milestone
 
@@ -86,12 +86,14 @@ Every completed milestone should include:
 - [x] Choose email provider strategy
 - [x] Define initial data model
 - [x] Define API boundaries
-- [ ] Define environment variables
+- [x] Define environment variables
 - [ ] Define deployment target
 
 ## MVP Implementation Backlog
 
-- [ ] Initialize application project
+- [x] Initialize application project
+- [x] Add Customer, Inquiry, and Notification ORM models
+- [x] Initialize Alembic and create initial schema migration
 - [ ] Build inquiry form
 - [ ] Store inquiry submissions
 - [ ] Generate AI output
@@ -100,6 +102,8 @@ Every completed milestone should include:
 - [ ] Build inquiry detail view
 - [ ] Add basic status update
 - [ ] Add basic validation
+- [ ] Add Pydantic API schemas
+- [ ] Add inquiry API endpoints
 - [ ] Add MVP setup documentation
 
 ## Website Backlog

@@ -88,12 +88,14 @@ Complete an implementation-ready MVP specification and initialize the developmen
 
 ### Day 6
 
-- Planned: FastAPI backend foundation.
-- Planned: Configuration structure.
-- Planned: SQLAlchemy models.
-- Planned: Alembic migration.
+- Completed: FastAPI backend foundation.
+- Completed: Configuration structure.
+- Completed: Customer, Inquiry, and Notification SQLAlchemy models.
+- Completed: Alembic initialization and initial schema migration.
 - Planned: Pydantic schemas.
+- Planned: Inquiry API endpoints.
 - Planned: Standard error-handling foundation.
+- Planned: AI and email integrations.
 
 ## Review
 

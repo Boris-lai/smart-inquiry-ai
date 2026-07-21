@@ -23,6 +23,10 @@ This project follows a simple changelog format during early development.
 - Added REST API contract.
 - Added standard API error format.
 - Added system architecture document.
+- Added FastAPI backend foundation with typed settings, database session setup, and a versioned health endpoint.
+- Added Customer, Inquiry, and Notification SQLAlchemy ORM models.
+- Added Alembic configuration and the initial MySQL schema migration.
+- Added focused backend tests for health, model metadata, and migration metadata.
 
 ### Changed
 
@@ -43,6 +47,7 @@ This project follows a simple changelog format during early development.
 - Documented cross-field phone validation for preferred phone contact.
 - Standardized API routes under `/api/v1`.
 - Synchronized planning and progress documents for Day 6 readiness.
+- Updated Sprint 1 and TODO progress for Day 6 backend foundation and schema work.
 
 ### Removed
 
