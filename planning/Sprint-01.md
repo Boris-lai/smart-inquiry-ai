@@ -94,7 +94,10 @@ Complete an implementation-ready MVP specification and initialize the developmen
 - Completed: Alembic initialization and initial schema migration.
 - Completed: Pydantic API schemas.
 - Completed: Standard error-handling foundation.
-- Planned: Inquiry API endpoints.
+- Completed: Public inquiry submission endpoint.
+- Completed: Customer lookup/create/update behavior.
+- Completed: Transactional Customer and Inquiry persistence.
+- Planned: Dashboard inquiry endpoints.
 - Planned: AI and email integrations.
 
 ## Review

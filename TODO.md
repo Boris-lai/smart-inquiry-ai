@@ -12,15 +12,15 @@ Establish the product definition, architecture direction, domain model, and firs
 
 ### Current Progress
 
-Day 1-5 specification work is complete. Day 6 backend foundation, ORM models, Alembic setup, the initial schema migration, Pydantic API schemas, and standard error handling are in place.
+Day 1-5 specification work is complete. Day 6 backend foundation, ORM models, Alembic setup, the initial schema migration, Pydantic API schemas, and standard error handling are in place. Day 7 public inquiry submission now stores Customer and Inquiry records transactionally.
 
 ### Current Task
 
-Continue Day 6 backend implementation without expanding MVP scope.
+Continue the MVP inquiry workflow without expanding scope.
 
 ### Next Milestone
 
-Day 6 backend foundation.
+Complete the inquiry submission path, then add AI, email, dashboard, and frontend pieces in separate scoped steps.
 
 ## Feature Definition of Done
 
@@ -96,15 +96,18 @@ Every completed milestone should include:
 - [x] Initialize Alembic and create initial schema migration
 - [x] Add Pydantic API schemas
 - [x] Add standard API error-handling foundation
+- [x] Add public inquiry submission endpoint
+- [x] Add Customer lookup/create/update behavior
+- [x] Store Customer and Inquiry transactionally
 - [ ] Build inquiry form
-- [ ] Store inquiry submissions
+- [x] Store inquiry submissions
 - [ ] Generate AI output
 - [ ] Send email notification
 - [ ] Build internal dashboard
 - [ ] Build inquiry detail view
 - [ ] Add basic status update
 - [ ] Add basic validation
-- [ ] Add inquiry API endpoints
+- [ ] Add dashboard inquiry API endpoints
 - [ ] Add MVP setup documentation
 
 ## Website Backlog

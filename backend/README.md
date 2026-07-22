@@ -12,13 +12,14 @@ FastAPI backend foundation for the Smart Inquiry AI MVP.
 - Alembic configuration and initial MySQL schema migration
 - Pydantic API schema contracts for the approved MVP inquiry workflow
 - Standard API error envelope and FastAPI exception handling foundation
+- Public inquiry submission endpoint at `POST /api/v1/inquiries`
+- Transactional Customer lookup/create/update and Inquiry storage
 
 Not implemented yet:
 
-- Inquiry API endpoints
-- Repository or service business logic
 - AI generation
 - Email notifications
+- Notification record creation
 - Dashboard behavior
 
 ## Local Setup
@@ -47,6 +48,30 @@ Health check:
 ```text
 GET /api/v1/health
 ```
+
+Submit a public inquiry:
+
+```text
+POST /api/v1/inquiries
+```
+
+The endpoint validates the approved public request, matches existing Customers
+by normalized lowercase email, updates allowed Customer fields, creates one
+Inquiry, and commits Customer plus Inquiry changes in one transaction.
+
+The success response is returned immediately after storage commits:
+
+```json
+{
+  "inquiry_id": 101,
+  "status": "new",
+  "ai_generation_status": "pending",
+  "message": "Your inquiry was received successfully."
+}
+```
+
+AI generation and email notification are not implemented yet, and no
+Notification record is created by this endpoint during Day 7.
 
 ## Database Models
 
@@ -107,4 +132,14 @@ pytest
 ```
 
 The current test suite validates health, model metadata, migration metadata,
-Pydantic schema behavior, and standard API error handling.
+Pydantic schema behavior, standard API error handling, and the public inquiry
+submission vertical slice.
+
+Run Ruff:
+
+```bash
+ruff check .
+```
+
+A real MySQL database with migrations applied is required for manual
+end-to-end persistence testing.

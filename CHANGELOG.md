@@ -30,6 +30,10 @@ This project follows a simple changelog format during early development.
 - Added Pydantic API schemas for public inquiry submission, dashboard inquiry views, status updates, notifications, and standard errors.
 - Added FastAPI exception handling foundation for validation, malformed JSON, API errors, not-found errors, conflicts, and unexpected failures.
 - Added focused backend tests for schema validation and error-handler behavior.
+- Added public `POST /api/v1/inquiries` endpoint.
+- Added focused Customer and Inquiry repositories for the public submission flow.
+- Added inquiry submission service with transactional Customer lookup/create/update and Inquiry persistence.
+- Added focused service and endpoint tests for public inquiry submission.
 
 ### Changed
 
@@ -52,6 +56,7 @@ This project follows a simple changelog format during early development.
 - Synchronized planning and progress documents for Day 6 readiness.
 - Updated Sprint 1 and TODO progress for Day 6 backend foundation and schema work.
 - Updated Sprint 1 and TODO progress for Day 6 Pydantic schema and error-handling work.
+- Updated Sprint 1, TODO, and backend README progress for Day 7 public inquiry submission.
 
 ### Removed
 
